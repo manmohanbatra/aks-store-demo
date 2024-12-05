@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'f2fdd985-c758-4e89-8552-0370bdd862c1'
   imageRepository: 'aksstoredemo'
   containerRegistry: 'myaksacr2000.azurecr.io'
-  dockerfilePath: '**/docker-compose-quickstart.yml'
+  dockerfilePath: '**/docker-compose-quickstart'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'myaksacr2000c290-auth'
 
