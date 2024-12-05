@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: aksstoredemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aksstoredemo
+  template:
+    metadata:
+      labels:
+        app: aksstoredemo 
+    spec:
+      containers:
+        - name: aksstoredemo 
+          image: myaksacr2000.azurecr.io/aksstoredemo
+          ports:
+          - containerPort: 5001
